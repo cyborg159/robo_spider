@@ -2,6 +2,7 @@
 This repository is used to store the versions of my project. 
 I build a hexagon - a robo spider and here are my my codes.
 This project is just for educational purposes.
+Do NOT use this code for: commercial purposes or mass application without my permission.
 
 ------------------------
 TECHNICAL INFORMATION
