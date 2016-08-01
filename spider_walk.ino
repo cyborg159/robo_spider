@@ -3,6 +3,8 @@
  *
  *  Created on: July 30, 2016
  *      Author: cyborg159
+ * 
+ * Do NOT use this code for: commercial purposes, mass application.
  */
 
 #include "Arduino.h"
