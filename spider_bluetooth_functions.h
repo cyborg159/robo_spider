@@ -28,12 +28,12 @@ SoftwareSerial BT(1,0);
 
 
 // initialization positions of each servo
-short posvL1 = 0,   //  up '-', down '+'
-	  posvR1 = 120, //  up '-', down '+'
-	  posvL2 = 48,  //  up '+', down '-'
-	  posvR2 = 5,   //  up '-', down '+'
-	  posvL3 = 60,	// up '+', down '-'
-	  posvR3 = 85,	// up '-', down '+'
+short posvL1 = 0,
+	  posvR1 = 0,
+	  posvL2 = 150,
+	  posvR2 = 0,
+	  posvL3 = 150,
+	  posvR3 = 0,
 
 	  poshL1 = 40,	// forward '+', backward '-'
 	  poshR1 = 100,	// forward '-', backward '+'
