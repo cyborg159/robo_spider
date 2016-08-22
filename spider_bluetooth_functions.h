@@ -2,7 +2,7 @@
  * spider_bluetooth_functions.h
  *
  *  Created on: Aug 21, 2016
- *      Author: richard
+ *      Author: cyborg159
  */
 
 #ifndef SPIDER_BLUETOOTH_FUNCTIONS_H_
