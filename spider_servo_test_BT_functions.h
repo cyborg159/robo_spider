@@ -2,7 +2,7 @@
  * spider_servo_test_BT_functions.h
  *
  *  Created on: Aug 20, 2016
- *      Author: richard
+ *      Author: cyborg159
  */
 
 #ifndef SPIDER_SERVO_TEST_BT_FUNCTIONS_H_
