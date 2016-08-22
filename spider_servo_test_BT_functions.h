@@ -24,6 +24,37 @@ SoftwareSerial BT(1,0);
 // connect BT module RX to D0
 // connect BT Vcc to 5V, GND to GND
 
+short posvL1 = 0,
+	  posvR1 = 0,
+	  posvL2 = 180,
+	  posvR2 = 0,
+	  posvL3 = 180,
+	  posvR3 = 0,
+
+	  poshL1 = 40,
+	  poshR1 = 100,
+	  poshL2 = 77,
+	  poshR2 = 75,
+	  poshL3 = 45,
+	  poshR3 = 95;
+
+//set each servo to it's initialization position
+void init_nor(){
+  vL1.write(posvL1);
+  vR1.write(posvR1);
+  vL2.write(posvL2);
+  vR2.write(posvR2);
+  vL3.write(posvL3);
+  vR3.write(posvR3);
+
+  hL1.write(poshL1);
+  hR1.write(poshR1);
+  hL2.write(poshL2);
+  hR2.write(poshR2);
+  hL3.write(poshL3);
+  hR3.write(poshR3);
+}
+
 void vert1(){
 	for(int i = 0; i <= 180; i++){
 		vL1.write(i);
