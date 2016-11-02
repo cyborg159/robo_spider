@@ -14,7 +14,8 @@
 #include "spider_bluetooth_functions.h"
 
 
-char c; // stores incoming character from other device
+char cOLD; // stores old incoming character from other device
+char cNEW; // stores new incoming character from other device
 
 // The setup function is called once at startup of the sketch
 void setup() {
@@ -39,13 +40,16 @@ void setup() {
 
 // The loop function is called in an endless loop
 void loop() {
+	cOLD=0;
+	cNEW=0;
   while (BT.available())
     // if text arrived in from BT serial...
     {
-      c=(BT.read());
 
+      cNEW=(BT.read());
+      if(cOLD != cNEW){
       // known BT commands
-      switch(c){
+      switch(cNEW){
         case 's' : {BodyUp(); break;}
         case 'e' : {BodyDown(); break;}
         case 'n' : {init_nor(); break;}
@@ -53,6 +57,8 @@ void loop() {
         case '2' : {turnL(); break;}
         case '3' : {turnR(); break;}
       }
+      cOLD = cNEW;
+	  }
     }
 
 }
